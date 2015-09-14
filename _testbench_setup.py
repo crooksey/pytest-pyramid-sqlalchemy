@@ -65,7 +65,7 @@ def dummy_request(db_session_ro, db_session_rw):
     # As my application views call "request.user" or "request.DBSEssion(X)"
     # this is how we modify these to add them to the request
     return testing.DummyRequest(DBSessionRW=db_session_rw, 
-    							DBSessionRO=db_session_rw,
+    							DBSessionRO=db_session_ro,
     							user=user)
 
 
